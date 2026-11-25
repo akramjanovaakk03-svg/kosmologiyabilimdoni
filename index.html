@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOSMOLOGIYA BILIMDONI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header>
+    <div class="logo">✦ KOSMOLOGIYA</div>
+    <div class="header-tag">KOINOT SIRLARINI KASHF ET</div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="home">
+      <div class="planet">🪐</div>
+      <p class="eyebrow">BILIMINGIZNI SINAB KO‘RING</p>
+      <h1>KOSMOS <span>BILIMDONI</span></h1>
+      <p class="intro">Koinot, galaktikalar, yulduzlar va fazo haqidagi bilimlaringizni namoyish eting!</p>
+
+      <div class="stats">
+        <div><strong>48</strong><small>Jami savol</small></div>
+        <div><strong>4</strong><small>Daraja</small></div>
+        <div><strong>10</strong><small>Har bir testda</small></div>
+      </div>
+
+      <h2>Qiyinlik darajasini tanlang</h2>
+      <div class="levels">
+        <button class="level" data-level="easy">
+          <b>01</b><span>Oson</span><small>Bilim asoslari</small>
+        </button>
+        <button class="level" data-level="medium">
+          <b>02</b><span>O‘rta</span><small>Fazo bilimlari</small>
+        </button>
+        <button class="level" data-level="hard">
+          <b>03</b><span>Qiyin</span><small>Chuqur bilimlar</small>
+        </button>
+        <button class="level" data-level="expert">
+          <b>04</b><span>Ekspert</span><small>Mutaxassis darajasi</small>
+        </button>
+      </div>
+
+      <p class="best">🏆 Eng yaxshi natija: <strong id="bestScore">0/10</strong></p>
+    </section>
+
+    <section class="quiz hidden" id="quiz">
+      <div class="quiz-top">
+        <button id="backBtn" class="back">← Orqaga</button>
+        <span id="levelName">Oson daraja</span>
+        <span id="counter">1 / 10</span>
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+
+      <div class="question-card">
+        <div class="question-number" id="questionNumber">SAVOL 01</div>
+        <h2 id="question">Savol matni</h2>
+        <div class="answers" id="answers"></div>
+        <div id="feedback" class="feedback hidden"></div>
+        <button id="nextBtn" class="next hidden">Keyingi savol →</button>
+      </div>
+    </section>
+
+    <section class="result hidden" id="result">
+      <div class="result-icon">🏆</div>
+      <p class="eyebrow">TEST YAKUNLANDI</p>
+      <h2 id="resultTitle">Ajoyib natija!</h2>
+      <div class="score-circle">
+        <strong id="finalScore">0/10</strong>
+        <small>To‘g‘ri javob</small>
+      </div>
+      <p id="resultText"></p>
+      <button class="restart" id="restartBtn">↻ Qayta test ishlash</button>
+      <button class="home-btn" id="homeBtn">Bosh sahifaga qaytish</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>KOSMOLOGIYA BILIMDONI</p>
+    <small>Loyiha muallifi: AKRAMJONOVA JADRA MARATOVNA</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
